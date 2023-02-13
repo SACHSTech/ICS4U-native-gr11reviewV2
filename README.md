@@ -42,38 +42,42 @@ Day 137, Taurus
 
 ### Review2.java - Decisions - switch/case
 Create a program that prints out a statement of options. Allow the user to select an option and react appropriately to the option selection using a switch case structure. The options should be as follows:
-0 - print a joke about your hair
-1 - print a joke about your feet
-2 - print a joke about your clothes 
-3 - print a joke about your teacher.  If an invalid option number is entered (i.e `4`), output `Invalid menu option`.
+0. Print a joke about your hair
+1. Print a joke about your feet
+2. Print a joke about your clothes 
+3. Print a joke about your teacher. 
+If an invalid option number is entered (i.e `4`), output `Invalid menu option`.
 
 #### Sample Run
 ```
-0 - print a joke about your hair
-1 - print a joke about your feet
-2 - print a joke about your clothes
-3 - print a joke about your teacher
+0. Print a joke about your hair
+1. Print a joke about your feet
+2. Print a joke about your clothes
+3 .Print a joke about your teacher
 Choose a menu option: 0
 Why do bees have sticky hair?
 They always use honeycombs.
 ```
 
 ### Review3.java - Iteration - for loop 1
-Create a program that prints the odd numbers from 20 to 100 and prints the numbers from 29 to 2 in decreasing order. You will need to create two separate loops with a blank line between them.
+Create a program that prints the even numbers from 20 to 100 and prints the numbers from 29 to 2 in decreasing order. You will need to create two separate loops with a blank line between them.
 
 ### Review4.java - Iteration - for loop 2
-Create a program that asks the user how many items he/she would like to purchase. The program then gets the prices for the items one by one. At the end of entering items, print out the total, the tax (13%) and the grand total.  Import and use the `java.text.DecimalFormat` class to output the information in currency format (0.00)
+Create a program that asks the user how many trips they would like to make and the fuel efficiency of their car in litres per 100km. The distance traveled for each trip and outputs total distance travelled and the amount of gas consumed. 
 
 #### Sample Run
 ```
-How many items do you want to buy? 4
-Enter the price for item 1: 2.50
-Enter the price for item 2: 3.99
-Enter the price for item 3: 6.99
-Enter the price for item 4: 7.99
-Subtotal: $21.47
-Tax: $2.79
-Total: $24.26
+Enter the number of trips: 4
+Enter the fuel efficency of the vehicle (in L/100km):  12.5
+
+Enter the distance travelled for trip 1: 45 
+Enter the distance travelled for trip 2: 38  
+Enter the distance travelled for trip 3: 75  
+Enter the distance travelled for trip 4: 102  
+
+Total distance travelled: 260km
+Total amount of gas consumed: 32.5L
+
 ```
 ## Review5.java - Iteration - while loop 1
 Write a program that prompts for a `yearly_amount`, annual `compound_interest_rate`, and outputs the number of years .  For compound interest, the interest rate is applied to the existing amount after each year.  
