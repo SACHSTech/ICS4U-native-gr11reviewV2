@@ -79,12 +79,10 @@ Create a program that asks the user how many trips they would like to make and t
 ```
 Enter the number of trips: 4
 Enter the fuel efficency of the vehicle (in L/100km):  12.5
-
 Enter the distance travelled for trip 1: 45 
 Enter the distance travelled for trip 2: 38  
 Enter the distance travelled for trip 3: 75  
 Enter the distance travelled for trip 4: 102  
-
 Total distance travelled: 260km
 Total amount of gas consumed: 32.5L
 

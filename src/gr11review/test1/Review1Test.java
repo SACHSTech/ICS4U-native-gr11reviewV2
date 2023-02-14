@@ -18,19 +18,19 @@ public class Review1Test {
     private final String sep = System.getProperty("line.separator");
 
     private final String[][]testInputs = {
-        {"1","1"},
-        {"12", "31"},
-        {"2", "1"},
-        {"3", "1"},
-        {"4", "14"}
+        {"5","17"},
+        {"4", "14"},
+        {"1", "15"},
+        {"11", "16"},
+        {"9", "1"}
     };
 
     private final String[] testOutputs = {
-        "1",
-        "365",
-        "32",
-        "60",
-        "104"
+        "Day 141, Taurus",
+        "Day 107, Aries",
+        "Day 15, Capricorn",
+        "Day 326, Scorpio",
+        "Day 249, Virgo"
     };
 
     /**

@@ -17,18 +17,18 @@ public class Review5Test {
     private final PrintStream sysOutBackup = System.out; // backup System.out to restore later
     private final String sep = System.getProperty("line.separator");
 
-    private final String[][]testInputs = {
-        {"0","0", "0"},
-        {"100", "10.00", "1000"},
-        {"100", "0", "200"},
-        {"500", "5.00","2000"},
-    };
+    private final String[]testInputs = {
+        "150",
+        "10",
+        "1000",
+        "5"
+     };
 
     private final String[] testOutputs = {
-        "0",
-        "7",
-        "2",
-        "4"
+        "12",
+        "8",
+        "15",
+        "7"
     };
 
     /**
@@ -49,8 +49,7 @@ public class Review5Test {
 
 
     private String getFormattedOutput(String output){
-        return "Enter the yearly invested amount: " + "Enter the compound interest rate: " + 
-        "Enter the target amount: " + "The target amount will be earned in "+output+" years." + sep;
+        return "Enter the initial amount of substance: "+ "The substance has decayed completely after "+ output +" half-lives."+ sep;
     }
 
 
@@ -67,7 +66,7 @@ public class Review5Test {
     void testMain0() throws Exception {
         
         // Set the input and output stream expected values
-        String simulatedUserInput = getFormattedInput(testInputs[0]);
+        String simulatedUserInput = testInputs[0];
         ByteArrayInputStream in = new ByteArrayInputStream(simulatedUserInput.getBytes());
 
         // Set the output stream expected value
@@ -87,7 +86,7 @@ public class Review5Test {
     void testMain1() throws Exception {
         
         // Set the input and output stream expected values
-        String simulatedUserInput = getFormattedInput(testInputs[1]);
+        String simulatedUserInput = testInputs[1];
         ByteArrayInputStream in = new ByteArrayInputStream(simulatedUserInput.getBytes());
 
         // Set the output stream expected value
@@ -107,7 +106,7 @@ public class Review5Test {
     void testMain2() throws Exception {
         
         // Set the input and output stream expected values
-        String simulatedUserInput = getFormattedInput(testInputs[2]);
+        String simulatedUserInput = testInputs[2];
         ByteArrayInputStream in = new ByteArrayInputStream(simulatedUserInput.getBytes());
 
         // Set the output stream expected value
@@ -128,7 +127,7 @@ public class Review5Test {
     void testMain3() throws Exception {
         
         // Set the input and output stream expected values
-        String simulatedUserInput = getFormattedInput(testInputs[3]);
+        String simulatedUserInput = testInputs[3];
         ByteArrayInputStream in = new ByteArrayInputStream(simulatedUserInput.getBytes());
 
         // Set the output stream expected value
