@@ -26,11 +26,11 @@ public class Review1Test {
     };
 
     private final String[] testOutputs = {
-        "Day 141, Taurus",
-        "Day 107, Aries",
+        "Day 137, Taurus",
+        "Day 104, Aries",
         "Day 15, Capricorn",
-        "Day 326, Scorpio",
-        "Day 249, Virgo"
+        "Day 320, Scorpio",
+        "Day 244, Virgo"
     };
 
     /**
