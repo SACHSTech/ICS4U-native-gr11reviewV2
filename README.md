@@ -41,26 +41,37 @@ Day 137, Taurus
 ```
 
 ### Review2.java - Decisions - switch/case
-Create a program that prints out a statement of options. Allow the user to select an option and react appropriately to the option selection using a switch case structure. The options should be as follows:
+Create a program that prints out a statement of options. Allow the user to select an option and react appropriately to the option selection using a switch case structure. The options should be as follows:  
+
 0. Print a joke about your hair
 1. Print a joke about your feet
 2. Print a joke about your clothes 
-3. Print a joke about your teacher. 
+3. Print a joke about your teacher.  
 If an invalid option number is entered (i.e `4`), output `Invalid menu option`.
 
-#### Sample Run
+#### Sample Run 1
 ```
 0. Print a joke about your hair
 1. Print a joke about your feet
 2. Print a joke about your clothes
-3 .Print a joke about your teacher
+3. Print a joke about your teacher
 Choose a menu option: 0
 Why do bees have sticky hair?
 They always use honeycombs.
 ```
 
+#### Sample Run 2
+```
+0. Print a joke about your hair
+1. Print a joke about your feet
+2. Print a joke about your clothes
+3. Print a joke about your teacher
+Choose a menu option: 4
+Invalid menu option
+```
+
 ### Review3.java - Iteration - for loop 1
-Create a program that prints the even numbers from 20 to 100 and prints the numbers from 29 to 2 in decreasing order. You will need to create two separate loops with a blank line between them.
+Create a program that prints the EVEN numbers from 20 to 200 and prints the numbers from 40 to 3 in decreasing order. You will need to create two separate loops with a blank line between them.
 
 ### Review4.java - Iteration - for loop 2
 Create a program that asks the user how many trips they would like to make and the fuel efficiency of their car in litres per 100km. The distance traveled for each trip and outputs total distance travelled and the amount of gas consumed. 
