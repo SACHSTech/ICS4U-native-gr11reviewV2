@@ -35,10 +35,11 @@ public class Review7Test {
 
         // Set the output stream expected value
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        String expectedOutput = "There are 0 characters in the sentence." + sep
-        + "There are 0 spaces in the sentence." + sep
-        + "There are 0 letter a in the sentence." + sep
-        + sep;
+        String expectedOutput = "Enter a sentence: " +sep
+        + "# Letters: 0" + sep
+        + "# Digits: 0" + sep
+        + "# Spaces: 0" + sep
+        + "# Other: 0" + sep;
         System.setIn(in);
         System.setOut(new PrintStream(out));
 
@@ -60,10 +61,11 @@ public class Review7Test {
 
         // Set the output stream expected value
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        String expectedOutput = "There are 1 characters in the sentence." + sep
-        + "There are 0 spaces in the sentence." + sep
-        + "There are 0 letter a in the sentence." + sep
-        + "-"+sep;
+        String expectedOutput = "Enter a sentence: "
+        + "# Letters: 1" + sep
+        + "# Digits: 0" + sep
+        + "# Spaces: 0" + sep
+        + "# Other: 0" + sep;
 
         // Set the System in/out to the simulated input/output
         System.setIn(in);
@@ -87,10 +89,11 @@ public class Review7Test {
 
         // Set the output stream expected value
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        String expectedOutput = "There are 3 characters in the sentence." + sep
-        + "There are 0 spaces in the sentence." + sep
-        + "There are 0 letter a in the sentence." + sep
-        + "--"+sep;
+        String expectedOutput = "Enter a sentence: "
+        + "# Letters: 3" + sep
+        + "# Digits: 0" + sep
+        + "# Spaces: 0" + sep
+        + "# Other: 0" + sep;
 
         // Set the System in/out to the simulated input/output
         System.setIn(in);
@@ -108,15 +111,16 @@ public class Review7Test {
     public void testMain3() throws Exception{
 
         // input 0 on product prompt
-        String simulatedUserInput = "bbab";
+        String simulatedUserInput = "55ab";
         ByteArrayInputStream in = new ByteArrayInputStream(simulatedUserInput.getBytes());
 
         // Set the output stream expected value
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        String expectedOutput = "There are 4 characters in the sentence." + sep
-        + "There are 0 spaces in the sentence." + sep
-        + "There are 1 letter a in the sentence." + sep
-        + "--"+sep;
+        String expectedOutput = "Enter a sentence: "
+        + "# Letters: 2" + sep
+        + "# Digits: 2" + sep
+        + "# Spaces: 0" + sep
+        + "# Other: 0" + sep;
 
         // Set the System in/out to the simulated input/output
         System.setIn(in);
@@ -134,15 +138,16 @@ public class Review7Test {
     public void testMain4() throws Exception{
 
         // input 0 on product prompt
-        String simulatedUserInput = "b a a b";
+        String simulatedUserInput = "b a 1 b@";
         ByteArrayInputStream in = new ByteArrayInputStream(simulatedUserInput.getBytes());
 
         // Set the output stream expected value
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        String expectedOutput = "There are 7 characters in the sentence." + sep
-        + "There are 3 spaces in the sentence." + sep
-        + "There are 2 letter a in the sentence." + sep
-        + "----"+sep;
+        String expectedOutput = "Enter a sentence: "
+        + "# Letters: 3" + sep
+        + "# Digits: 1" + sep
+        + "# Spaces: 3" + sep
+        + "# Other: 1" + sep;
 
         // Set the System in/out to the simulated input/output
         System.setIn(in);
@@ -160,15 +165,16 @@ public class Review7Test {
     public void testMain5() throws Exception{
 
         // input 0 on product prompt
-        String simulatedUserInput = "aaa bbb";
+        String simulatedUserInput = "# 1 2 3 x y z#";
         ByteArrayInputStream in = new ByteArrayInputStream(simulatedUserInput.getBytes());
 
         // Set the output stream expected value
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        String expectedOutput = "There are 7 characters in the sentence." + sep
-        + "There are 1 spaces in the sentence." + sep
-        + "There are 3 letter a in the sentence." + sep
-        + "----"+sep;
+        String expectedOutput = "Enter a sentence: "
+        + "# Letters: 3" + sep
+        + "# Digits: 3" + sep
+        + "# Spaces: 6" + sep
+        + "# Other: 2" + sep;
 
         // Set the System in/out to the simulated input/output
         System.setIn(in);

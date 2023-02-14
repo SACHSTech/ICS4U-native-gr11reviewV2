@@ -25,13 +25,13 @@ public class Review3Test {
         String solutionStr = "";
 
 
-        for(int i = 21; i <= 100; i+=2){
+        for (int i = 20; i <= 200; i += 2){
             solutionStr += Integer.toString(i) + sep;
         }
 
         solutionStr += sep;
 
-        for(int j = 29;  j >= 2; j--){
+        for (int j = 40; j >= 3; j--){
             solutionStr += Integer.toString(j) + sep;
         }
 

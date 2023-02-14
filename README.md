@@ -8,100 +8,129 @@ Program the solutions for each problem in their respective files found in the `s
 * Full marks awarded for matching the sample runs EXACTLY AS SHOWN
 
 
-
 ## Part 1
 ### Review1.java - Decisions-if
-Create a program that asks the user to enter a month number (1 = January, 2 = February etc.) and day and then prints the day of the year. Assume that it is not a leap year.
+Create a program that asks the user to enter a month number (1 = January, 2 = February etc.) and day and then prints the day of the year and the zodiac sign based on the day number. Assume that it is not a leap year.
 
-#### Sample Run
+The Zodiac Sign Dates are as follows 
+* Aries (March 21 – April 19)
+* Taurus (April 20 – May 20)
+* Gemini (May 21 – June 20)
+* Cancer (June 21 – July 22)
+* Leo (July 23 – August 22)
+* Virgo (August 23 – September 22)
+* Libra (September 23 – October 22)
+* Scorpio (October 23 – November 21)
+* Sagittarius (November 22 – December 21)
+* Capricorn (December 22 – January 19)
+* Aquarius (January 20 – February 18)  
+* Pisces (February 19 – March 20) 
+#### Sample Run 1
 ```
-Enter the month number: 4
-Enter the day number: 14
-104
+Enter the month number: 2
+Enter the day number: 13
+Day 44, Aquarius
+```
+
+#### Sample Run 2
+```
+Enter the month number: 5
+Enter the day number: 17
+Day 137, Taurus
 ```
 
 ### Review2.java - Decisions - switch/case
-Create a program that prints out a statement of options. Allow the user to select an option and react appropriately to the option selection using a switch case structure. The options should be as follows:
-0 - print a joke about your hair
-1 - print a joke about your feet
-2 - print a joke about your clothes 
-3 - print a joke about your teacher.  If an invalid option number is entered (i.e `4`), output `Invalid menu option`.
+Create a program that prints out a statement of options. Allow the user to select an option and react appropriately to the option selection using a switch case structure. The options should be as follows:  
 
-#### Sample Run
+0. Print a joke about your hair
+1. Print a joke about your feet
+2. Print a joke about your clothes 
+3. Print a joke about your teacher.  
+If an invalid option number is entered (i.e `4`), output `Invalid menu option`.
+
+#### Sample Run 1
 ```
-0 - print a joke about your hair
-1 - print a joke about your feet
-2 - print a joke about your clothes
-3 - print a joke about your teacher
+0. Print a joke about your hair
+1. Print a joke about your feet
+2. Print a joke about your clothes
+3. Print a joke about your teacher
 Choose a menu option: 0
 Why do bees have sticky hair?
 They always use honeycombs.
 ```
 
+#### Sample Run 2
+```
+0. Print a joke about your hair
+1. Print a joke about your feet
+2. Print a joke about your clothes
+3. Print a joke about your teacher
+Choose a menu option: 4
+Invalid menu option
+```
+
 ### Review3.java - Iteration - for loop 1
-Create a program that prints the odd numbers from 20 to 100 and prints the numbers from 29 to 2 in decreasing order. You will need to create two separate loops with a blank line between them.
+Create a program that prints the EVEN numbers from 20 to 200 and prints the numbers from 40 to 3 in decreasing order. You will need to create two separate loops with a blank line between them.
 
 ### Review4.java - Iteration - for loop 2
-Create a program that asks the user how many items he/she would like to purchase. The program then gets the prices for the items one by one. At the end of entering items, print out the total, the tax (13%) and the grand total.  Import and use the `java.text.DecimalFormat` class to output the information in currency format (0.00)
+Create a program that asks the user how many trips they would like to make and the fuel efficiency of their car in litres per 100km. The distance traveled for each trip and outputs total distance travelled and the amount of gas consumed. 
 
 #### Sample Run
 ```
-How many items do you want to buy? 4
-Enter the price for item 1: 2.50
-Enter the price for item 2: 3.99
-Enter the price for item 3: 6.99
-Enter the price for item 4: 7.99
-Subtotal: $21.47
-Tax: $2.79
-Total: $24.26
+Enter the number of trips: 4
+Enter the fuel efficency of the vehicle (in L/100km):  12.5
+Enter the distance travelled for trip 1: 45 
+Enter the distance travelled for trip 2: 38  
+Enter the distance travelled for trip 3: 75  
+Enter the distance travelled for trip 4: 102  
+Total distance travelled: 260km
+Total amount of gas consumed: 32.5L
+
 ```
 ## Review5.java - Iteration - while loop 1
-Write a program that prompts for a `yearly_amount`, annual `compound_interest_rate`, and outputs the number of years .  For compound interest, the interest rate is applied to the existing amount after each year.  
+Write a Java program that calculates the remaining amount of a substance after a certain number of half-lives have passed.  
 
-
-### Sample Run
-```
-Enter the yearly invested amount: 100
-Enter the compound interest rate: 2.5
-Enter the target amount: 1800
-The target amount will be earned in 15 years.
-```
-
-### Explanation
-After the first year `$100.00` has been invested and the interest is `2.5/100*100 = $2.50`. Thus the amount of money after the first year is now `$100.00 + $2.50 = $102.50`. 
-
-In the second year another $100.00 is invested for a total of $202.50, and the interest is 2.5/100 * 202.50 = 5.06. The amount after two years is `202.50 + 5.06 =  207.56` ... this continues until the total amount surpasses $1800.  In this case it will be 15 years. 
-
-### Review6.java - Iteration - while loop 2
-Create a cash register program similar to the one above, except instead of prompting for the number items, the user is able to keep entering item prices until the enter 0.  Import and use the [`java.text.DecimalFormat`](https://jenkov.com/tutorials/java-internationalization/decimalformat.html) class to output the information in currency format (0.00)
+The half-life of a substance is the amount of time it takes for half of it to decay. The formula to calculate the remaining amount of the substance after `n` half-lives is:  
+<br>
+`remaining = initialAmount * Math.pow(0.5, n)`.  
+<br>
+where `initialAmount` is the initial amount of the substance and `n` is the number of half-lives that have passed.  
+<br>
+Your program should ask the user for the initial amount of the substance, and then output how many half-lives it takes for the substance to completely decay.  We can say that a substance has completely decayed if the remaining amount is less than or equal to 0.1.
 
 #### Sample Run
 ```
-Enter the price for an item: 2.50
-Enter the price for an item: 3.99
-Enter the price for an item: 6.99
-Enter the price for an item: 7.99
-Enter the price for an item: 0
-Subtotal: $21.47
-Tax: $2.79
-Total: $24.26
+Enter the initial amount of substance: 100
+The substance has decayed completely after 9 half-lives.
+```
+
+### Review6.java - Iteration - while loop 2
+Create a fuel efficiency program  similar to the one above, except instead of prompting for the number of trips, the user is able to keep entering trip distances until a distance of 0 is entered.
+
+#### Sample Run
+```
+Enter the fuel efficency of the vehicle (in L/100km):  12.5
+
+Enter the distance travelled for trip 1: 45 
+Enter the distance travelled for trip 2: 38  
+Enter the distance travelled for trip 3: 75  
+Enter the distance travelled for trip 4: 102
+Enter the distance travelled for trip 5: 0
+
+Total distance travelled: 260km
+Total amount of gas consumed: 32.5L
 ```
 
 ### Review7.java - String Manipulation
-Create a program that will input a sentence from the user and store it in a String variable called theSentence. Use the String methods to compute the following about the sentence.
-Stats about the sentence:
-* There are # characters in the sentence.
-* There are # spaces in the sentence.
-* There are # letter a in the sentence.
-* Taking the odd numbered characters in the sentence produces the following string “---------“
+Create program that gets a string from the user and outputs the numbers of letters, digits, spaces, and other characters in the sentence.  
 
 #### Sample Run
 ```
-aaa bbb
-There are 7 characters in the sentence.
-There are 1 spaces in the sentence.
-There are 3 letter a in the sentence.
-----
+Enter a string:  There are 12 months in a year.
+# Letters: 21
+# Digits: 2
+# Spaces: 6
+# Other: 1
 ```
 
 ### Review8.java - Pre-defined methods - Random
