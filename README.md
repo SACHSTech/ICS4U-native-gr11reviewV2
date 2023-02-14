@@ -8,7 +8,6 @@ Program the solutions for each problem in their respective files found in the `s
 * Full marks awarded for matching the sample runs EXACTLY AS SHOWN
 
 
-
 ## Part 1
 ### Review1.java - Decisions-if
 Create a program that asks the user to enter a month number (1 = January, 2 = February etc.) and day and then prints the day of the year and the zodiac sign based on the day number. Assume that it is not a leap year.
@@ -91,52 +90,49 @@ Total amount of gas consumed: 32.5L
 
 ```
 ## Review5.java - Iteration - while loop 1
-Write a program that prompts for a `yearly_amount`, annual `compound_interest_rate`, and outputs the number of years .  For compound interest, the interest rate is applied to the existing amount after each year.  
+Write a Java program that calculates the remaining amount of a substance after a certain number of half-lives have passed.  
 
-
-### Sample Run
-```
-Enter the yearly invested amount: 100
-Enter the compound interest rate: 2.5
-Enter the target amount: 1800
-The target amount will be earned in 15 years.
-```
-
-### Explanation
-After the first year `$100.00` has been invested and the interest is `2.5/100*100 = $2.50`. Thus the amount of money after the first year is now `$100.00 + $2.50 = $102.50`. 
-
-In the second year another $100.00 is invested for a total of $202.50, and the interest is 2.5/100 * 202.50 = 5.06. The amount after two years is `202.50 + 5.06 =  207.56` ... this continues until the total amount surpasses $1800.  In this case it will be 15 years. 
-
-### Review6.java - Iteration - while loop 2
-Create a cash register program similar to the one above, except instead of prompting for the number items, the user is able to keep entering item prices until the enter 0.  Import and use the [`java.text.DecimalFormat`](https://jenkov.com/tutorials/java-internationalization/decimalformat.html) class to output the information in currency format (0.00)
+The half-life of a substance is the amount of time it takes for half of it to decay. The formula to calculate the remaining amount of the substance after `n` half-lives is:  
+<br>
+`remaining = initialAmount * Math.pow(0.5, n)`.  
+<br>
+where `initialAmount` is the initial amount of the substance and `n` is the number of half-lives that have passed.  
+<br>
+Your program should ask the user for the initial amount of the substance, and then output how many half-lives it takes for the substance to completely decay.  We can say that a substance has completely decayed if the remaining amount is less than or equal to 0.1.
 
 #### Sample Run
 ```
-Enter the price for an item: 2.50
-Enter the price for an item: 3.99
-Enter the price for an item: 6.99
-Enter the price for an item: 7.99
-Enter the price for an item: 0
-Subtotal: $21.47
-Tax: $2.79
-Total: $24.26
+Enter the initial amount of substance: 100
+The substance has decayed completely after 9 half-lives.
+```
+
+### Review6.java - Iteration - while loop 2
+Create a fuel efficiency program  similar to the one above, except instead of prompting for the number of trips, the user is able to keep entering trip distances until a distance of 0 is entered.
+
+#### Sample Run
+```
+Enter the fuel efficency of the vehicle (in L/100km):  12.5
+
+Enter the distance travelled for trip 1: 45 
+Enter the distance travelled for trip 2: 38  
+Enter the distance travelled for trip 3: 75  
+Enter the distance travelled for trip 4: 102
+Enter the distance travelled for trip 5: 0
+
+Total distance travelled: 260km
+Total amount of gas consumed: 32.5L
 ```
 
 ### Review7.java - String Manipulation
-Create a program that will input a sentence from the user and store it in a String variable called theSentence. Use the String methods to compute the following about the sentence.
-Stats about the sentence:
-* There are # characters in the sentence.
-* There are # spaces in the sentence.
-* There are # letter a in the sentence.
-* Taking the odd numbered characters in the sentence produces the following string “---------“
+Create program that gets a string from the user and outputs the numbers of letters, digits, spaces, and other characters in the sentence.  
 
 #### Sample Run
 ```
-aaa bbb
-There are 7 characters in the sentence.
-There are 1 spaces in the sentence.
-There are 3 letter a in the sentence.
-----
+Enter a string:  There are 12 months in a year.
+# Letters: 21
+# Digits: 2
+# Spaces: 6
+# Other: 1
 ```
 
 ### Review8.java - Pre-defined methods - Random
