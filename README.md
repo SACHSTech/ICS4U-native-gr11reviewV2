@@ -83,7 +83,7 @@ Enter the distance travelled for trip 1: 45
 Enter the distance travelled for trip 2: 38  
 Enter the distance travelled for trip 3: 75  
 Enter the distance travelled for trip 4: 102  
-Total distance travelled: 260km
+Total distance travelled is 260km
 Total amount of gas consumed: 32.5L
 
 ```
@@ -117,7 +117,7 @@ Enter the distance travelled for trip 3: 75
 Enter the distance travelled for trip 4: 102
 Enter the distance travelled for trip 5: 0
 
-Total distance travelled: 260km
+Total distance travelled is 260km
 Total amount of gas consumed: 32.5L
 ```
 
